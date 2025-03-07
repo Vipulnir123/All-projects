@@ -8,15 +8,34 @@ html,body{
     width: 100%;
     height: 100%;
 }
+#minicircle{
+    transition: cubic-bezier(0.19, 1, 0.22, 1) .7s;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 99999;
+    border-radius: 50%;
+}
+.bounding{
+    width: fit-content;
+    opacity: .7;
+
+    overflow: hidden;
+}
+
 #main{
     width: 100%;
+    background-color: black;
 }
 #hero{
     width: 100%;
     height: 100vh;
     background-color: black;
     color: whitesmoke;
+    position: relative;
 }
+
 #nav{
     display: flex;
     align-items: center;
@@ -57,6 +76,10 @@ html,body{
     opacity: 1;
 }
 .blocktext {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+ 
     width: fit-content;
 }
 .blocktext h6{
@@ -64,6 +87,7 @@ html,body{
     font-size: 1vw;
 }
 #chotiheading h6{
+    
     margin-top: .5vw;
     font-size: 1.25vw;
     text-align: right;
@@ -109,6 +133,9 @@ html,body{
     color: whitesmoke;
     
 }
+#second h6{
+    font-size: 20px;
+}
 .elem{
     display: flex;
     position: relative;
@@ -134,7 +161,9 @@ html,body{
     /*opacity: 0;*/
     display: none;
 }
-
+.boundingelem{
+    font-size: 7.5vw;
+}
 
 
 #about{
